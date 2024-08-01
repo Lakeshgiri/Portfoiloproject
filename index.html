@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakesh Giri - Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS here */
+        .profile-container {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 140, 202, 0.7);
+            color: white;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .profile-text {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Additional styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+
+        .dropdown-button {
+            background-color: #008cca;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .dropdown-button:hover {
+            background-color: #006fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lakesh Giri</h1>
+        <p>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>
+            | giril@sheridancollege.ca
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="profile-container">
+                <img src="lakesh.jpg" alt="Lakesh Giri">
+                <div class="overlay">
+                    <div class="profile-text">
+                        Hi, I'm Lakesh Giri. I am currently enrolled in the CST-ITIS program and am in my final semester. I am about to graduate and am actively seeking future job opportunities.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class="dropdown-button" onclick="toggleDropdown()">About Me</button>
+        <div id="dropdownContent" class="dropdown-content">
+            <section id="summary">
+                <h2>Summary of Qualifications</h2>
+                <p>I am skilled in network technologies, including Active Directory and Linux, with a strong background in help desk support and project management. My expertise includes Ethernet, LAN, WAN, TCP/IP, HTML, CSS, and database systems, along with tools like Microsoft Visual Studio and WordPress. I excel in creating documentation, managing time effectively, and working both independently and in teams. With strong communication skills and a keen attention to detail, I am adept at optimizing IT equipment performance under pressure.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p>Currently pursuing a diploma in Computer System Technician Information Technology & Infrastructure Services at Sheridan Institute of Technology & Advanced Learning, expected to graduate in August 2024. My coursework covers HTML, CSS, MS Access, SQL, Linux, and Windows. I am also skilled in using Microsoft Office 365, Visual Studio, WordPress, Cisco Packet Tracer, VMware, SQL Server, and project management tools.</p>
+            </section>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <b>
+                    <p>Customer Service Representative<br>
+                        Enigma, Nepal<br>
+                        2018 - 2019</p>
+                </b>
+                <ul>
+                    <li><b>Call Management:</b> Managed call scheduling and coordination, ensuring timely and efficient handling of customer inquiries and support requests.</li>
+                    <li><b>Documentation:</b> Handled letters and emails, maintaining accurate records of customer interactions and ensuring follow-up on outstanding issues.</li>
+                    <li><b>Customer Interaction:</b> Engaged with customers, providing information and resolving issues, thereby enhancing customer satisfaction and loyalty.</li>
+                </ul>
+
+                <b>
+                    <p>IT Helpdesk<br>
+                        AOMES (Academy of Medical and Engineering Science), Nepal<br>
+                        February 2022 - August 2022</p>
+                </b>
+                <ul>
+                    <li>Technical Assistance: Assisted with resolving IT device issues, including troubleshooting hardware and software problems, ensuring minimal disruption to the users.</li>
+                    <li>Network Management: Managed network configurations and performed routine maintenance tasks to ensure network stability and security.</li>
+                    <li>Software Utilization: Utilized Microsoft Word, PowerPoint, and Excel for documentation and reporting, creating comprehensive technical guides and user manuals.</li>
+                    <li>User Support: Provided exceptional customer service by assisting users with IT-related queries and problems, fostering a supportive and efficient work environment.</li>
+                </ul>
+
+                <b>
+                    <p>Jr. Technical Analyst (4 months Co-op)<br>
+                        Hydroform Martinrea, ON<br>
+                        May 2023 - August 2023</p>
+                </b>
+                <ul>
+                    <li>First-level Support: Provided first-level technical support for desktops, VoIP phones, printers, and network issues via a ticketing system, ensuring quick resolution to minimize downtime.</li>
+                    <li>Onboarding Setup: Set up IT equipment for new hires, including desktops, laptops, and phones, to ensure a smooth onboarding experience, optimizing system configurations for enhanced performance.</li>
+                    <li>Equipment Upgrades: Upgraded laptops, phones, and other IT equipment for existing employees, significantly improving overall performance and operational efficiency.</li>
+                    <li>Documentation: Maintained and updated documented processes, procedures, and user-friendly instructions for end-users, contributing to the creation of a comprehensive IT knowledge base.</li>
+                    <li>Ticket Management: Documented and tracked support requests, ensuring timely resolution and effective communication with end-users.</li>
+                    <li>Inventory Management: Refilled and documented the IT inventory, managing asset records and tracking equipment. Maintained and requested purchase orders, tracked orders, and managed invoices for payment.</li>
+                </ul>
+
+                <b>
+                    <p>LCBO<br>
+                        Brampton<br>
+                        December 2023 - Present</p>
+                </b>
+                <ul>
+                    <li>Order Management: Efficiently managed customer orders, ensuring accuracy and timely delivery.</li>
+                    <li>Team Collaboration: Demonstrated strong teamwork and communication skills, collaborating with colleagues to provide excellent customer service.</li>
+                    <li>Customer Engagement: Interacted with customers to understand their needs and preferences, providing personalized service to enhance customer experience.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <img id="mainImg" src="ramreplacement.jpg" alt="Project Image">
+            <ul>
+                <li><a href="RAM Replacement Task Completion.pdf">Replacement of RAMs</a></li>
+                <li><a href="Ticket Resolution Task Completion Using ServiceNow.pdf">Solved different tickets on Ticketing system like Servicenow Tool</a></li>
+                <li><a href="Mars Setup Task Completion.pdf">Setting up Mars (usually used in factories)</a></li>
+                <li><a href="Hardware and Software Updates Task Completion.pdf">Hardware and Software updates</a></li>
+                <li><a href="Midterm hands-on S2024 BY Lakesh.pdf">Adjusted directory structure to meet requirements by removing extra directories in Linux.</a></li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript, PHP</li>
+                <li>MySQL, Microsoft SQL Server</li>
+                <li>Network Technologies (Ethernet, LAN, WAN, TCP/IP)</li>
+                <li>Operating Systems (Windows, Linux)</li>
+                <li>Project Management</li>
+                <li>Technical Documentation</li>
+                <li>Customer Service and Communication</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="name" required><br>
+
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" required><br>
+
+                <label for="Message">Message:</label>
+                <input type="text" id="Message" name="Message" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lakesh Giri. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.classList.toggle("show");
+        }
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
